@@ -285,12 +285,16 @@ int main(int argc, char* argv[]) {
     int nt = atoi(argv[2]);
     int ALG = atoi(argv[3]);
 
-    while(n % 16 != 0) {
+    if (ALG == 4)
+    {
+        while(n % 16 != 0) {
         cout << "n debe ser multiplo de 16 para WMMA (tensor cores)." << endl;
         cout << "Ingrese un nuevo valor para n: ";
         cin >> n;
         cout << endl;
+        }
     }
+    
 
     float *A, *B, *C;
     A = new float[n * n];
