@@ -78,14 +78,6 @@ El objetivo de esta tarea es implementar y comparar el rendimiento de diferentes
 | 512  | 6.46x    | 11.83x    | 22.46x    | 35.44x    |
 | 1024 | 9.67x    | 19.39x    | 34.47x    | 56.11x    |
 
-**Speedup por número de threads (base: 1 thread):**
-
-| N    | 2 Threads | 4 Threads | 8 Threads |
-|------|-----------|-----------|-----------|
-| 256  | 1.95x     | 3.19x     | 4.32x     |
-| 512  | 1.83x     | 3.48x     | 5.48x     |
-| 1024 | 2.01x     | 3.56x     | 5.80x     |
-
 ---
 
 ## Especificaciones de Hardware
