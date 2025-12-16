@@ -111,6 +111,13 @@ El objetivo de esta tarea es implementar y comparar el rendimiento de diferentes
 | 4096  | 52.47x    | 72.68x       | 348.30x      |
 | 8192  | 93.30x    | 130.43x      | 293.30x      |
 
+### Gráficos de Rendimiento
+
+Para una mejor visualización de los resultados, consultar los siguientes gráficos:
+
+- **[Speedup vs N](graficos/Speedup_vs_N.png)**: Comparación de aceleración de las diferentes implementaciones GPU respecto a CPU
+- **[Tiempo de Ejecución vs N](graficos/Tiempo_vs_N.png)**: Tiempos de ejecución para cada implementación según el tamaño de matriz
+
 ### Observaciones
 
 #### Escalabilidad
