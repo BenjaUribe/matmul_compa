@@ -1,5 +1,5 @@
 # Programacion en paradigmas funcional y paralelo
-**INFO188 - Tarea 2: Multiplicaicon de matrices en paralelo CPU y GPU**
+**INFO188 - Tarea 2: Multiplicacion de matrices en paralelo CPU y GPU**
 
 ---
 ## Integrantes
@@ -61,6 +61,30 @@ El objetivo de esta tarea es implementar y comparar el rendimiento de diferentes
 | 4096  | 14559     | 277.462   | 200.308    | 41.7946    |
 | 8192  | 215080    | 2305.56   | 1648.91    | 733.285    |
 | 16384 | -         | 20043.7   | 13336.6    | 11214.1    |
+
+### Rendimiento CPU con Diferentes Threads
+
+| N    | Secuencial (ms) | 1 Thread (ms) | 2 Threads (ms) | 4 Threads (ms) | 8 Threads (ms) |
+|------|-----------------|---------------|----------------|----------------|----------------|
+| 256  | 100.432         | 20.773        | 10.64130       | 6.51839        | 4.81263        |
+| 512  | 976.478         | 151.143       | 82.5704        | 43.4824        | 27.5622        |
+| 1024 | 12862.672       | 1330.32       | 663.335        | 373.216        | 229.248        |
+
+**Speedup respecto a versión secuencial:**
+
+| N    | 1 Thread | 2 Threads | 4 Threads | 8 Threads |
+|------|----------|-----------|-----------|-----------|
+| 256  | 4.83x    | 9.44x     | 15.41x    | 20.86x    |
+| 512  | 6.46x    | 11.83x    | 22.46x    | 35.44x    |
+| 1024 | 9.67x    | 19.39x    | 34.47x    | 56.11x    |
+
+**Speedup por número de threads (base: 1 thread):**
+
+| N    | 2 Threads | 4 Threads | 8 Threads |
+|------|-----------|-----------|-----------|
+| 256  | 1.95x     | 3.19x     | 4.32x     |
+| 512  | 1.83x     | 3.48x     | 5.48x     |
+| 1024 | 2.01x     | 3.56x     | 5.80x     |
 
 ---
 
